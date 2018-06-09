@@ -17,42 +17,60 @@
 /*
  *
  */
+  int * pt;
  int m,n=0;
  int tananho;
-int* criar_matriz(int tamanho,int m, int n){
-tamanho=m*n;
-int v[tamanho];
-return *v;
+
+void imprime(int v[],int tamanho);
+void criar_matriz(tamanho);
+void adicionar(int v[], int linha, int coluna, int elem);
+int buscar(int linha, int coluna, int v[]);
+
+int main(int argc, char** argv) {
+
+ criar_matriz(tananho);
+    adicionar(pt,2,1,12);
+    adicionar(pt,1,2,40);
+    adicionar(pt,2,3,14);
+    imprime(pt,tananho);
+    return (EXIT_SUCCESS);
+}
+void criar_matriz(tamanho){
+int k=0;
+    printf("\nDigite a dimensão M: ");
+    scanf("%d", &m);
+    printf("\nDigite a dimensão N: ");
+    scanf("%d", &m);
+    tamanho=m*n;
+    int v[tamanho];
+    pt =v;
+    for(;k<tamanho;k++){
+        v[k]=0;
+    }
+return*v;
 
 }
 //int vet[];
-adicionar(int tamanho, int v[], int linha, int coluna, int elem){
- int k= linha*(n-1)+coluna;
- v[k] = elem;
+void adicionar(int v[], int linha, int coluna, int elem){
+ int k=0;
+    k = linha*(n-1)+coluna;
+    v[k] = elem;
 }
 
-imprime(int tamanho,int v[]){
+void imprime(int v[],int tamanho){
 int i,j,z;
-   for(i<tamanho;i++;){
+    for(i<tamanho;i++;){
         for(j<n;j++;){
-        printf("%d ",&v[z]);
-}
-printf("\n");
-}
+            printf("%d ",&v[z]);
+        }
+        printf("\n");
+    }
 }
 
-int buscar(int v[] ,int linha, int coluna, int vet[]){
- int k= linha*(n-1)+coluna;
+int buscar(int linha, int coluna, int v[]){
+ int k=0;
+    k= linha*(n-1)+coluna;
  return v[k];
 
-}
-
-int main(int argc, char** argv) {
- int v[tamanho]{0};
- adicionar(v,2,1,12);
-  adicionar(v,1,2,40);
-   adicionar(v,2,3,14);
- imprime()
-    return (EXIT_SUCCESS);
 }
 
